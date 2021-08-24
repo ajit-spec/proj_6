@@ -1,0 +1,14 @@
+.mat-toolbar nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.mat-toolbar nav button {
+  margin: 0 0 0 2rem;
+}
+.mat-toolbar nav button:first-child {
+  margin: 0;
+}
+
+/*# sourceMappingURL=header.component.css.map */

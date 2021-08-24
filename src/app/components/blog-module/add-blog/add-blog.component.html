@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="form-container">
+    <h2>Add Blog</h2>
+
+    <form [formGroup]="form" (ngSubmit)="onsubmit()">
+
+      <mat-form-field appearance="outline">
+        <mat-label>Title</mat-label>
+        <input matInput [formControlName]="'title'">
+        <mat-error *ngIf="getformcontrol().title.invalid">{{geterrormsgfortitle()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Description</mat-label>
+        <input matInput [formControlName]="'description'">
+        <mat-error *ngIf="getformcontrol().description.invalid">{{geterrormsgfordescription()}}</mat-error>
+      </mat-form-field>
+      <button type="submit" mat-raised-button [color]="'primary'">{{isedit ? 'Edit' : 'Add'}}</button>
+    </form>
+
+  </div>
+</div>

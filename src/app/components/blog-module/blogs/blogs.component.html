@@ -1,0 +1,5 @@
+<div class="container">
+
+  <app-blog-card
+    *ngFor="let post of service5.allposts" [post]="post" (updatedposts)="getallpost()"></app-blog-card>
+</div>

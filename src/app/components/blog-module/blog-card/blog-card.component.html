@@ -1,0 +1,14 @@
+<mat-card *ngIf="post">
+  <mat-card-content>
+    <h2>{{post?.title}}</h2>
+    <p>{{post?.description}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button [color]="'primary'" [disabled]="post.user_id !== service4.getcurrentuser()._id"
+            (click)="editblog()">edit
+    </button>
+    <button mat-raised-button [color]="'warn'" [disabled]="post.user_id !== service4.getcurrentuser()._id"
+            (click)="deleteblog()">delete
+    </button>
+  </mat-card-actions>
+</mat-card>

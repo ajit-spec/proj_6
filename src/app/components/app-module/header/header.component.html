@@ -1,0 +1,23 @@
+<mat-toolbar [color]="'primary'" *ngIf="service4.isauthenticated()">
+  <button mat-icon-button>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <h2>BLOG App</h2>
+
+  <!--  <nav *ngIf="!service4.isauthenticated()">-->
+  <!--    <button mat-button [routerLink]="['/', 'login']">Login</button>-->
+  <!--    <button mat-button [routerLink]="['/', 'register']">Register</button>-->
+  <!--  </nav>-->
+
+  <nav>
+    <button mat-button [routerLink]="['/', 'blogs', 'add-blog']">Add Blog</button>
+    <button mat-button [routerLink]="['/', 'blogs']">Blogs</button>
+    <button mat-button [matMenuTriggerFor]="menu">Welcome {{service4.loggedinuser}}</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item [routerLink]="['/', 'change-password']">Change password</button>
+      <button mat-menu-item (click)="service2.logout()">Logout</button>
+    </mat-menu>
+  </nav>
+
+</mat-toolbar>
+
