@@ -1,27 +1,36 @@
-# Client
+# Modern Web Application using MEAN stack
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
+This is a basic boilerplate for the MEAN stack ([MongoDB](https://www.mongodb.org/), [Express](http://expressjs.com/), [Angular](https://angular.io/) and [Node.js](https://nodejs.org))
 
-## Development server
+Website deployed URL = [App](https://sptnaaevrz.herokuapp.com/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### Features
+- MVC project structure
+- [Angular Material framework](https://material.angular.io/) for UI
+- [Mongoose](https://mongoosejs.com/docs/index.html) for MongoDB interactions.
 
-## Code scaffolding
+## Application Requirements
+- [Node.js & NPM](https://nodejs.org/en/download/)
+- [MongoDB](https://www.mongodb.org/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
+##### Run the application locally
+1. Clone or download this repo onto your machine.
+1. Install [application requirements](#application-requirements) if not done so already.
+1. Open application directory in your terminal and run `npm install`
+2. npm run start to start server and ng serve to start client
 
-## Build
+#### Problems or Questions?
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Create a [GitHub issue](https://github.com/ajit-spec/proj_6/issues/new) for questions or problems occurs using this demo.
 
-## Running unit tests
+## Application
+- **MongoDB** stores user account information and persists sessions (so that a server crash does not log out all users.)
+- **Express** functions Node.js middleware to handle all HTTP requests and routing.
+- **Angular** handles HTML templating and data manipulation.
+- **Node.js** is the runtime for the application.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+There is also generous commenting throughout the application which helps explain critical parts of the application.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contribute
+Please create a pull request with your desired changes.
